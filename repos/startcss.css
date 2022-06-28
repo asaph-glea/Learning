@@ -1,0 +1,13 @@
+p{
+  text-align: center;
+  line-height: 1.5;
+}
+h1{
+  text-decoration: overline brown;
+}
+a{
+  text-decoration: none;
+}
+input[type="search"]{
+  color: maroon;
+}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    font-family: 'Roboto', sans-serif; 
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(89, 104, 105);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex:1;
+    text-align: center;
+}
+nav h2{
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: white;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    position: relative;
+    padding:8px 12px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul li a:hover{
+    cursor: pointer;
+    font-size: 22px;
+    text-shadow: 1px 1px orange;
+}
+.textBox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textBox h1{
+    font-size: 60px;
+}
+.textBox p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: white;
+}
+.textBox a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.textBox a:hover{
+    border: 1px solid whitesmoke;
+    background: whitesmoke;
+    transition: 1s;
+    color: black;
+}
+
+nav .fas{
+    display: none;
+}
+
+.hotels{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.hotels h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.hotels p{
+    color: rgb(89, 104, 105);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.hotels .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .hotel-col{
+    flex-basis: 31%;
+    background: wheat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.row .hotel-col h3{
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.row .hotel-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.amenities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.amenities .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.amen-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.amen-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.4);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 800;
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*--TESTIMONIALS--*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.testimonials .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin: 2%;
+    text-align: center;
+    background: orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+.testimonial-col img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: -45%;
+    bottom: -10px;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+}
+@media(max-width:700px){
+    .textBox h1{
+        font-size: 15px;
+    }
+    .nav-links ul li{
+       display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: orange;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .testimonials .row{
+        display: block;
+    }
+}

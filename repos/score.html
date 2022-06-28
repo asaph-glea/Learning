@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Score Keeper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-half
+                is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1548175429-b3b9d408afd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNjb3JlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                                <h4 class="title is-4">Your game Score Keeper</h4>
+                                <h1 class="title is-1">
+                                    <span id="score1">0</span>
+                                    to
+                                    <span id="score2">0</span>
+                                </h1>
+                            </div>
+                          </div>
+                          <div class="media-content">
+                            <p class="subtitle is-6">Use the buttons below to keep score</p>
+                          </div>
+                          <div class="content">
+                            <label for="" class="label is-large is-inline">Playing To</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="scoreLimit">
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        </select> 
+                                </div>
+                          </div>
+                          <footer class="card-footer ">
+                                <button id="playerx" class="button is-success is-medium card-footer-item">Player One</button>
+                                <button id="playery" class="button is-danger is-medium card-footer-item">Player Two</button>
+                                <button id="reset" class="button is-info is-medium card-footer-item">Reset</button>
+                          </footer>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <script src="scorre.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/eed9ae5300.js" crossorigin="anonymous"></script>
+    <title>Hotel Views</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <h2>A.M.Studios</h2>
+          <div class="nav-links" id="navLinks">
+            <i class="fas fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#houses">Houses</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#Contacts">Contacts</a></li>
+          </ul>
+        </div>
+         <i class="fas fa-bars" onclick="showMenu()"></i>  
+      </nav>
+      <div class="textBox">
+        <h1>Hotels! We got you Covered</h1>
+        <p>We live for vacationers and travelers who love a good deal, fun, and adventure.</p>
+        <a href="" class="visitBtn">Visit Us and experience</a>
+      </div>
+    </section>
+    <!---Hotels Services offered-->
+    <section class="hotels">
+      <h1>Vacation Modes we Offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Reprehenderit neque accusantium inventore doloribus iste quas,
+          earum sunt! Cum recusandae ratione quidem voluptates libero obcaecati, 
+        fuga ipsam temporibus necessitatibus deleniti. Adipisci?</p>
+        <div class="row">
+          <div class="hotel-col">
+            <h3>Two-star</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Quidem pariatur nostrum minus tempore non eos reiciendis,
+               corporis itaque. Sapiente cupiditate ullam quae cum atque ad et,
+              ex voluptate. Quod, soluta!</p>
+          </div>
+          <div class="hotel-col">
+            <h3>Three-star</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Quidem pariatur nostrum minus tempore non eos reiciendis,
+               corporis itaque. Sapiente cupiditate ullam quae cum atque ad et,
+              ex voluptate. Quod, soluta!</p>
+          </div>
+          <div class="hotel-col">
+            <h3>Four-star</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Quidem pariatur nostrum minus tempore non eos reiciendis,
+               corporis itaque. Sapiente cupiditate ullam quae cum atque ad et,
+              ex voluptate. Quod, soluta!</p>
+          </div>
+        </div>
+    </section>
+    <!---Amenities-->
+    <section class="amenities">
+      <h1>Provided Ammenities</h1>
+      <p>The range of services offered will
+         constitute your happy vacation during your stay</p>
+      <div class="row">
+        <div class="amen-col">
+          <img src="https://rb.gy/qkxdqc" alt="">
+          <div class="layer">
+            <h3>Parking</h3>
+
+          </div>
+        </div>
+        <div class="amen-col">
+          <img src="https://rb.gy/d31y5m" alt="">
+          <div class="layer">
+            <h3>Conference</h3>
+          </div>
+        </div>
+        <div class="amen-col">
+          <img src="https://rb.gy/ahirgf" alt="">
+          <div class="layer">
+            <h3>Food and Beverages</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials -->
+    <section class="testimonials">
+      <h1>What our Visitors Say</h1>
+      <p>To prove the value of what you have to offer,
+         why not let your happy customers do the talking?</p>
+        <div class="row">
+          <div class="testimonial-col">
+            <img src="https://rb.gy/2tdndu" alt="">
+            <div>
+              <p> Aliquid 
+                magni itaque voluptatem deserunt, minus aspernatur nostrum 
+                voluptatibus possimus atque ut praesentium autem cupiditate reiciendis
+                 laborum id tempore voluptates harum temporibus?</p>
+                 <h3>Barry</h3>
+            </div>
+          </div>
+          <div class="testimonial-col">
+            <img src="https://rb.gy/emg9lc" alt="">
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid 
+                magni itaque voluptatem deserunt,laborum id tempore voluptates 
+                harum temporibus?</p>
+                 <h3>Noho Hanks</h3>
+            </div>
+          </div>
+          <div class="testimonial-col">
+            <img src="https://rb.gy/49crcr" alt="">
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid 
+                magni itaque voluptatem deserunt, minus aspernatur nostrum 
+                voluptatibus possimus atque ut praesentium autem cupiditate reiciendis
+                 laborum id tempore voluptates harum temporibus?</p>
+                 <h3>Melo Moel</h3>
+            </div>
+          </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+      <h1>Hotels</h1>
+      <div>
+        
+      </div>
+
+    </section>
+    <script>
+      var navLinks = document.querySelector('#navLinks');
+      function showMenu(){
+        navLinks.style.right = '0';
+      }
+      function hideMenu(){
+        navLinks.style.right = '-200px';
+      }
+    </script>
+  </body>
+</html>
